@@ -2,6 +2,7 @@
 import { Button } from "./Button";
 import { InputField } from "./InputField";
 import { User, Mail, Lock } from "lucide-react";
+import Image from "next/image";
 
 export function Form() {
     return (
