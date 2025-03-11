@@ -8,7 +8,7 @@ type InputFieldProps = {
     icon: ReactNode;
 };
 
-export function InputField({ label, type, name, icon }: InputFieldProps) {
+export function InputField({ type, name, icon }: InputFieldProps) {
     return (
         <div className="flex flex-col gap-1">
             {/* <label className="text-sm font-medium text-white">{label}</label> */}
