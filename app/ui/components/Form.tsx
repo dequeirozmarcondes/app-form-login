@@ -1,7 +1,6 @@
 // ui/components/Form.tsx
 import { Button } from "./Button";
 import { InputField } from "./InputField";
-import Image from 'next/image';
 import { User, Mail, Lock } from "lucide-react";
 
 export function Form() {
