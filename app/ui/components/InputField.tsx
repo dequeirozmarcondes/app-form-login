@@ -5,19 +5,25 @@ type InputFieldProps = {
     label: string;
     type: string;
     name: string;
+    placeholder: string;
     icon: ReactNode;
 };
 
-export function InputField({ type, name, icon }: InputFieldProps) {
+export function InputField({ label, type, name, icon, placeholder }: InputFieldProps) {
     return (
         <div className="flex flex-col gap-1">
-            {/* <label className="text-sm font-medium text-white">{label}</label> */}
-            <div className="flex items-center border border-gray-500 bg-gray-600 text-white rounded-lg p-2 mb-2 mt-2">
+            <label htmlFor={name} className="text-sm font-bold text-gray-800 rounded-lg pl-2">
+                {label}
+            </label>
+            <div className="flex items-center border border-gray-500 bg-slate-900 text-white rounded-lg p-2">
                 {icon}
                 <input
+                    id={name}
                     type={type}
                     name={name}
-                    className="bg-transparent flex-1 ml-2 focus:outline-none"
+                    placeholder={placeholder}
+                    className="bg-transparent flex-1 ml-2 focus:outline-none text-sm placeholder:text-sm placeholder-gray-400"
+                    aria-label={label}
                 />
             </div>
         </div>

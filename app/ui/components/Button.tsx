@@ -7,7 +7,7 @@ export function Button({ children, type = "button" }: ButtonProps) {
     return (
         <button
             type={type}
-            className="w-full p-2 bg-slate-900 text-white rounded-lg hover:bg-slate-500 transition font-semibold shadow-md cursor-pointer mt-2"
+            className="w-full p-2 bg-slate-900 text-white rounded-lg hover:bg-stone-700 transition font-semibold shadow-md cursor-pointer mt-2"
         >
             {children}
         </button>
